@@ -6,6 +6,7 @@ class Comprobante extends XML
     {
         $this->atributos = [];
         $this->atributos['Version'] = '3.3';
+        $this->atributos['Fecha'] = '3.3';
         $this->atributos['Serie'] = '';
         $this->atributos['Folio'] = '';
         $this->atributos['Sello'] = ' ';
@@ -15,6 +16,7 @@ class Comprobante extends XML
         $this->atributos['Descuento'] = '';
         $this->atributos['MotivoDescuento'] = '';
         $this->atributos['TipoCambio'] = '';
+        $this->atributos['SubTotal'] = '';
         $this->atributos['Moneda'] = '';
         $this->atributos['Total'] = '';
         $this->atributos['MetodoPago'] = 'PUE';
@@ -28,6 +30,7 @@ class Comprobante extends XML
         $this->atributos['MontoFolioFiscalOrig'] = '';
         $this->rules = [];
         $this->rules['Version'] = 'R';
+        $this->rules['Fecha'] = 'R';
         $this->rules['Serie'] = 'O';
         $this->rules['Folio'] = 'O';
         $this->rules['Sello'] = 'R';
@@ -39,6 +42,7 @@ class Comprobante extends XML
         $this->rules['Descuento'] = 'O';
         $this->rules['MotivoDescuento'] = 'O';
         $this->rules['TipoCambio'] = 'O';
+        $this->rules['SubTotal'] = 'R';
         $this->rules['Moneda'] = 'R';
         $this->rules['Total'] = 'R';
         $this->rules['TipoDeComprobante'] = 'R';
